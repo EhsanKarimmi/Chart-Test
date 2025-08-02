@@ -220,8 +220,8 @@ export const Chart: React.FC<Props> = ({
   }, [chart, width, height]);
 
   return (
-    <div className="bg-white rounded-2xl shadow-md p-5 mb-8">
-      <h2 className="text-lg font-semibold mb-2">{chart.title}</h2>
+    <div className="bg-white rounded-xl border border-zinc-200 shadow flex flex-col justify-center items-center  p-5 mb-8">
+      <h2 className="text-lg font-semibold mb-2 uppercase">{chart.title}</h2>
       <svg ref={svgRef} className="w-full" />
     </div>
   );
